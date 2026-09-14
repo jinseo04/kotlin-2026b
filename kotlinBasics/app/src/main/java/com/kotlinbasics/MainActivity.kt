@@ -1,4 +1,4 @@
-lspackage com.kotlinbasics
+package com.kotlinbasics
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -27,9 +27,19 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        week03Variables()
     }
 }
+private fun week03Variables() {
+    println("Week 03 : Variable")
 
+    val couresName = "Mobile Programming" //java final 함수 내에서 재 정의 불가능
+
+    var week = 2;
+    week = 3;
+    println("Coures : $couresName")
+    println("week : $week")
+}
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
